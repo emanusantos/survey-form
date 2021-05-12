@@ -1,49 +1,59 @@
-<html>
-  <div class="header">
-    <h1 id="title">Mizael's Survey Form</h1>
-    <p id="description"><em>Obrigado por dedicar um pouco do seu tempo a esse formulário :)</em></p>
-  </div>
-  <form id="survey-form">
-    <div class="form-control">
-      <label for="name" id="name-label">Nome</label>
-      <input type="text" id="name" placeholder="Digite o seu nome" required/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Survey Form</title>
+</head>
+  <body>
+    <div class="header">
+      <h1 id="title">Mizael's Survey Form</h1>
+      <p id="description"><em>Obrigado por dedicar um pouco do seu tempo a esse formulário :)</em></p>
     </div>
-    <div class="form-control">
-      <label for="email" id="email-label">E-mail</label>
-      <input type="email" id="email" placeholder="Digite o seu e-mail" required/>
-    </div>
-    <div class="form-control">
-      <label for="age" id="number-label">Idade</label>
-      <input type="number" id="number" placeholder="Idade" required min="12" max="112"/>
-    </div>
-    <div class="form-control">
-      <label for="dropdown" id="dropdown-label">Qual dessas você prefere manusear?</label>
-      <input list="dropdown"/>
-      <datalist id="dropdown">
-        <option value="HTML"></option>
-        <option value="CSS"></option>
-        <option value="JavaScript"></option>
-      </datalist>
-    </div>
-    <div class="form-control">
-      <label>Você curtiu esse formulário?</label>
-      <label for="curtiu-1"><input type="radio" id="curtiu-1" name="curtiu" value="sim"/> Sim</label>
-      <label for="curtiu-2"><input type="radio" id="curtiu-2" name="curtiu" value="talvez"/> Talvez</label>
-      <label for="curtiu-3"><input type="radio" id="curtiu-3" name="curtiu" value="não"/> Não</label>
-    </div>
-    <div class="form-control">
-      
-      <label>Por onde você soube desse formulário?</label>
-      <label for="soube-1"><input type="checkbox" name="soube" id="soube-1" value="cp">Codepen.io</label>
-      <label for="soube-2"><input type="checkbox" name="soube" id="soube-2" value="li">LinkedIn</label>
-      <label for="soube-3"><input type="checkbox" name="soube" id="soube-3" value="gh">GitHub</label>
-      <label for="soube-4"><input type="checkbox" name="soube" id="soube-4" value="other">Outro</label>
-      
-    </div>
-    <div class="form-control">
-      <label for="comment">O que você acha que pode melhorar nesse formulário?</label>
-      <textarea name="comment" id="comment" cols="80" rows="10" placeholder="Digite seu comentário aqui..."></textarea>
-    </div>
-      <button id="submit">Enviar!</button>
-  </form>
+    <form id="survey-form">
+      <div class="form-control">
+        <label for="name" id="name-label">Nome</label>
+        <input type="text" id="name" placeholder="Digite o seu nome" required/>
+      </div>
+      <div class="form-control">
+        <label for="email" id="email-label">E-mail</label>
+        <input type="email" id="email" placeholder="Digite o seu e-mail" required/>
+      </div>
+      <div class="form-control">
+        <label for="age" id="number-label">Idade</label>
+        <input type="number" id="number" placeholder="Idade" required min="12" max="112"/>
+      </div>
+      <div class="form-control">
+        <label for="dropdown" id="dropdown-label">Qual dessas você prefere manusear?</label>
+        <input list="dropdown"/>
+        <datalist id="dropdown">
+          <option value="HTML"></option>
+          <option value="CSS"></option>
+          <option value="JavaScript"></option>
+        </datalist>
+      </div>
+      <div class="form-control">
+        <label>Você curtiu esse formulário?</label>
+        <label for="curtiu-1"><input type="radio" id="curtiu-1" name="curtiu" value="sim"/> Sim</label>
+        <label for="curtiu-2"><input type="radio" id="curtiu-2" name="curtiu" value="talvez"/> Talvez</label>
+        <label for="curtiu-3"><input type="radio" id="curtiu-3" name="curtiu" value="não"/> Não</label>
+      </div>
+      <div class="form-control">
+
+        <label>Por onde você soube desse formulário?</label>
+        <label for="soube-1"><input type="checkbox" name="soube" id="soube-1" value="cp">Codepen.io</label>
+        <label for="soube-2"><input type="checkbox" name="soube" id="soube-2" value="li">LinkedIn</label>
+        <label for="soube-3"><input type="checkbox" name="soube" id="soube-3" value="gh">GitHub</label>
+        <label for="soube-4"><input type="checkbox" name="soube" id="soube-4" value="other">Outro</label>
+
+      </div>
+      <div class="form-control">
+        <label for="comment">O que você acha que pode melhorar nesse formulário?</label>
+        <textarea name="comment" id="comment" cols="80" rows="10" placeholder="Digite seu comentário aqui..."></textarea>
+      </div>
+        <button id="submit">Enviar!</button>
+    </form>
+  </body>
 </html>
